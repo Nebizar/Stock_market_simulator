@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.input.*?>
+<?import javafx.event.*?>
+
+<GridPane id="AnchorPane" xmlns:fx="http://javafx.com/fxml/1" fx:controller="symulatorjava.FXMLDocumentController" alignment="center" hgap="10" vgap="10">
+    <padding>
+        <Insets top="25" right="25" bottom="25" left="25"/>
+    </padding>
+    <children>
+        <Label text="Symulator giełdy" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2" fx:id= "label"/>
+        <Button  text="Stworz Obiekt" GridPane.columnIndex = "3" GridPane.rowIndex = "1" GridPane.columnSpan="2" onAction="#handleButtonAction" fx:id="button" />
+        <Button text="Zapisz dane" GridPane.columnIndex = "3" GridPane.rowIndex = "2" GridPane.columnSpan="2" onAction="#handleSave" fx:id="saveButton"/>
+        <Button text="Wczytaj dane" GridPane.columnIndex = "3" GridPane.rowIndex = "3" GridPane.columnSpan="2" onAction="#handleLoad" fx:id="loadButton"/>
+        <Button text="Porownaj aktywa" GridPane.columnIndex = "3" GridPane.rowIndex = "4" GridPane.columnSpan="2" onAction="#handleChart" fx:id="chartButton"/>
+        <ListView GridPane.columnIndex = "0" GridPane.rowIndex = "1" GridPane.rowSpan = "1" GridPane.columnSpan="1" fx:id="walutyL" onMouseClicked = "#handleWaluty" />
+        <ListView GridPane.columnIndex = "0" GridPane.rowIndex = "2" GridPane.rowSpan = "1" GridPane.columnSpan="1" fx:id="surowceL" onMouseClicked = "#handleSurowce"/>
+        <ListView GridPane.columnIndex = "1" GridPane.rowIndex = "1" GridPane.rowSpan = "1" GridPane.columnSpan="1" fx:id="akcjeL" onMouseClicked = "#handleAkcje"/>
+        <ListView GridPane.columnIndex = "1" GridPane.rowIndex = "2" GridPane.rowSpan = "1" GridPane.columnSpan="1" fx:id="spolkiL" onMouseClicked = "#handleSpolka" />
+        <ListView GridPane.columnIndex = "2" GridPane.rowIndex = "1" GridPane.rowSpan = "1" GridPane.columnSpan="1" fx:id="inwestorzyL" onMouseClicked = "#handleInwestor"/>
+        <ListView GridPane.columnIndex = "2" GridPane.rowIndex = "2" GridPane.rowSpan = "1" GridPane.columnSpan="1" fx:id="funduszeL" onMouseClicked = "#handleFundusz"/>
+    </children>
+</GridPane>

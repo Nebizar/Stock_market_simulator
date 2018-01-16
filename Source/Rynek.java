@@ -3,13 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package symulator;
+package symulatorjava;
+import java.io.*;
 
 /**
  *
  * @author Krzysztof
  */
-public class Rynek {
+public class Rynek implements Serializable{
     private String nazwa;
     private double marza;
     

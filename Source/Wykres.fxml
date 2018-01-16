@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.chart.*?>
+
+<GridPane id="AnchorPaneX" xmlns:fx="http://javafx.com/fxml/1" fx:controller="symulatorjava.WykresController" alignment="center" hgap="10" vgap="10">
+    <padding>
+        <Insets top="25" right="25" bottom="25" left="25"/>
+    </padding>
+    <children>
+        <Pane GridPane.columnIndex = "0" GridPane.rowIndex = "8" >
+        <LineChart fx:id="lineChart" prefHeight="450.0" prefWidth="900.0">
+              <xAxis>
+                <NumberAxis  fx:id="xAxis" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis fx:id="yAxis" side="LEFT" upperBound="160.0" />
+              </yAxis>
+        </LineChart>
+        </Pane>
+    </children>
+</GridPane>

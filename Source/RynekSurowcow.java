@@ -3,7 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package symulator;
+package symulatorjava;
+
+import java.util.Random;
 
 /**
  *
@@ -11,4 +13,9 @@ package symulator;
  */
 public class RynekSurowcow extends Rynek{
     private Surowiec surowiec;
+    
+    public RynekSurowcow(){
+        Random los = new Random();
+        this.ustawPar("Rynek Walut",los.nextDouble() );
+    }
 }
